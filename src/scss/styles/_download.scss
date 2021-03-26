@@ -1,0 +1,84 @@
+.download {
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  background-color: #fafafa;
+
+  @include mobile-lg {
+    padding: 50px 60px;
+  }
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  @include wide-screen-lg {
+    margin-bottom: 200px;
+  }
+
+  .media {
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__screan {
+    margin-left: 0;
+    align-self: center;
+
+    @include tablet {
+      margin-left: 100px;
+      width: 50%;
+    }
+
+    @include desktop-md {
+      margin-left: 40px;
+    }
+
+    @include wide-screen-sm {
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-family: $font-submain;
+    font-size: 1.25rem;
+    text-align: center;
+
+    @include mobile-md {
+      font-size: 1.5rem;
+    }
+
+    @include mobile-lg {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    @include desktop-sm {
+      font-size: 2rem;
+    }
+
+    @include desktop-md {
+      font-size: 2.5rem;
+    }
+
+    @include wide-screen-lg {
+      margin-bottom: 80px;
+      font-size: 3.5rem;
+    }
+  }
+
+  &__caption {
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    @include desktop-md {
+      margin-bottom: 30px;
+      font-size: 1.75rem;
+    }
+
+    @include wide-screen-lg {
+      font-size: 2.25rem;
+      margin-bottom: 50px;
+    }
+  }
+}

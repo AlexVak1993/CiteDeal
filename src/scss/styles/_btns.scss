@@ -1,0 +1,78 @@
+.store-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    align-items: flex-start;
+  }
+
+  @include desktop-md {
+    flex-direction: row;
+  }
+
+  .link {
+    margin-bottom: 20px;
+    background-color: $clr-primary;
+    border-radius: 12px;
+    color: $clr-light;
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    transition: .3s;
+
+    &:hover, &:focus {
+      background-color: $clr-accent;
+      box-shadow: 0 5px 10px $clr-black;
+    }
+
+    @include mobile-lg {
+      width: 60%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include desktop-md {
+      &:first-of-type {
+        margin-right: 20px;
+      }
+    }
+
+    img {
+      max-width: 15%;
+
+      @include wide-screen-lg {
+        max-width: 75px;
+        max-height: 75px;
+      }
+    }
+
+    p {
+      font-family: $font-accent;
+      font-weight: 600;
+      margin: auto 0;
+      width: 100%;
+      text-align: center;
+
+      @include mobile-md {
+        font-size: 1.25rem;
+      }
+
+      @include mobile-lg {
+        font-size: 1.5rem;
+      }
+
+      @include tablet {
+        font-size: 1.125em;
+      }
+
+      @include wide-screen-md {
+        font-size: 1.375rem;
+      }
+
+      span {
+        font-size: 1.25em;
+      }
+    }
+  }
+}

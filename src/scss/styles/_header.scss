@@ -19,6 +19,16 @@
     @include wide-screen-lg {
       margin-right: 60px;
     }
+
+    img {
+    transition: filter 1s;
+    }
+
+    &:hover, &:focus {
+      img {
+        filter: hue-rotate(-22deg);
+      }
+    }
   }
 
   &__navbar {
@@ -34,8 +44,14 @@
           left: 50%;
           transform: translateX(-50%);
           width: 100%;
-          height: 0;
+          height: 3px;
           background-color: $clr-accent;
+          opacity: 0;
+          transition: opacity .3s;
+
+          @include wide-screen-lg {
+            height: 6px;
+          }
 
           @include desktop-sm {
             bottom: -10px;
@@ -43,23 +59,15 @@
           }
         }
 
-        &:hover::before {
-          height: 3px;
-
-          @include wide-screen-lg {
-            height: 6px;
-          }
+        &:hover::before, &:focus::before {
+          opacity: 1;
         }
       }
 
       &.active {
         .nav-link {
           &::before {
-            height: 3px;
-
-            @include wide-screen-lg {
-              height: 6px;
-            }
+            opacity: 1;
           }
         }
       }
@@ -98,9 +106,11 @@
 
       @include wide-screen-lg {
         padding: 20px 30px;
+        font-size: 1.5rem;
+        line-height: 1;
       }
 
-      &:hover {
+      &:hover, &:focus {
         background-color: $clr-primary;
       }
     }

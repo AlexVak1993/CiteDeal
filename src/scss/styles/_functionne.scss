@@ -1,0 +1,94 @@
+.functionne {
+  margin: 0;
+  padding: 0;
+
+  @include mobile-lg {
+    margin: 0 30px;
+  }
+  @include wide-screen-lg {
+    margin: 0 140px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: $font-title;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25rem;
+
+    @include mobile-md {
+      font-size: 1.5rem;
+    }
+    @include tablet {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    @include wide-screen-lg {
+      font-size: 3rem;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
+    @include wide-screen-lg {
+      margin-bottom: 150px;
+    }
+    
+    .media {
+      padding: 10px 0;
+      flex-direction: column;
+
+      @include tablet {
+        flex-direction: row;
+      }
+
+      &-body {
+        padding: 20px;
+
+        @include desktop-sm {
+          padding: 30px;
+        }
+        @include wide-screen-sm {
+          padding: 50px 50px 50px 80px;
+        }
+        @include wide-screen-lg {
+          padding: 75px 40px 40px 180px;
+        }
+      }
+
+      &-title {
+        font-weight: 700;
+        margin-bottom: 15px;
+
+        @include mobile-lg {
+          font-size: 1.5rem;
+        }
+        @include desktop-md {
+          font-size: 1.75rem;
+        }
+        @include wide-screen-lg {
+          font-size: 2.5rem;
+        }
+      }
+
+      img {
+        width: 50%;
+
+        @include tablet {
+          width: auto;
+        }
+      }
+    }
+
+    &--bgr {
+      .media:nth-of-type(odd) {
+        background-color: #D6D5FF;
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.footer {
+  background-color: $clr-accent;
+  color: $clr-light;
+  padding: 20px 0;
+
+  @include wide-screen-lg {
+    padding-top: 75px;
+    padding-bottom: 45px;
+  }
+
+  &__top {
+
+    .store-btn {
+      flex: 0 0 100%;
+
+      @include tablet {
+        flex-direction: row;
+      }
+
+      @include wide-screen-sm {
+        flex: 0 0 40%;
+        flex-direction: row;
+      }
+
+      .link {
+        font-size: 1rem;
+        line-height: 1;
+        transition: .3s;
+
+        @include tablet {
+          width: 60% !important;
+
+          &:first-of-type {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      span {
+        font-size: 1.125em !important;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include wide-screen-lg {
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+  }
+
+  &__info {
+    padding: 20px 20px 20px 0;
+    flex: 0 0 100%;
+    text-align: center;
+
+    @include mobile-lg {
+      flex: 0 0 50%;
+    }
+
+    @include desktop-sm {
+      text-align: left;
+    }
+
+    @include wide-screen-sm {
+      flex: 0 0 30%;
+    }
+
+    p {
+      @include wide-screen-lg {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    @include mobile-lg {
+      flex-direction: row;
+    }
+
+    .copyright {
+      margin-top: auto;
+      order: 1;
+
+      @include mobile-lg {
+        order: 0;
+      }
+
+      @include wide-screen-lg {
+        font-size: 1.25rem;
+      }
+    }
+
+    .socials {
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: flex-end;
+
+      @include mobile-lg {
+        padding-bottom: 0;
+      }
+
+      a {
+        margin-right: 20px;
+        transition: filter .3s;
+
+        @include wide-screen-lg {
+          margin-right: 45px;
+        }
+
+        &:last-of-type {
+          margin: 0;
+        }
+        &:hover {
+          filter: invert(30%);
+        }
+      }
+    }
+  }
+}
