@@ -1,0 +1,24 @@
+.hero {
+  background: transparent linear-gradient(180deg, #695EFC 0%, #B9B9FF00 100%) 0% 0% no-repeat padding-box;
+
+  &__title {
+    text-align: center;
+    font-family: $font-submain;
+    font-weight: 700;
+    color: $clr-light;
+  }
+
+  .card {
+    background-color: transparent;
+    border: none;
+
+    &-title {
+      text-align: center;
+      color: $clr-light;
+    }
+  }
+
+  &__caption {
+    text-align: center;
+  }
+}

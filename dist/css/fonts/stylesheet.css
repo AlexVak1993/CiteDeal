@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Bold.eot');
+    src: url('AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNextLTPro-Bold.woff2') format('woff2'),
+        url('AvenirNextLTPro-Bold.woff') format('woff'),
+        url('AvenirNextLTPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Demi.eot');
+    src: url('AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNextLTPro-Demi.woff2') format('woff2'),
+        url('AvenirNextLTPro-Demi.woff') format('woff'),
+        url('AvenirNextLTPro-Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-BoldCn.eot');
+    src: url('AvenirNextLTPro-BoldCn.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNextLTPro-BoldCn.woff2') format('woff2'),
+        url('AvenirNextLTPro-BoldCn.woff') format('woff'),
+        url('AvenirNextLTPro-BoldCn.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-DemiCn.eot');
+    src: url('AvenirNextLTPro-DemiCn.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNextLTPro-DemiCn.woff2') format('woff2'),
+        url('AvenirNextLTPro-DemiCn.woff') format('woff'),
+        url('AvenirNextLTPro-DemiCn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-It.eot');
+    src: url('AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNextLTPro-It.woff2') format('woff2'),
+        url('AvenirNextLTPro-It.woff') format('woff'),
+        url('AvenirNextLTPro-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('AvenirNextLTPro-Regular.eot');
+    src: url('AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('AvenirNextLTPro-Regular.woff') format('woff'),
+        url('AvenirNextLTPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-CondensedMedium.eot');
+    src: url('Futura-CondensedMedium.eot?#iefix') format('embedded-opentype'),
+        url('Futura-CondensedMedium.woff2') format('woff2'),
+        url('Futura-CondensedMedium.woff') format('woff'),
+        url('Futura-CondensedMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-CondensedExtraBold.eot');
+    src: url('Futura-CondensedExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Futura-CondensedExtraBold.woff2') format('woff2'),
+        url('Futura-CondensedExtraBold.woff') format('woff'),
+        url('Futura-CondensedExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-MediumItalic.eot');
+    src: url('Futura-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Futura-MediumItalic.woff2') format('woff2'),
+        url('Futura-MediumItalic.woff') format('woff'),
+        url('Futura-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-Bold.eot');
+    src: url('Futura-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Futura-Bold.woff2') format('woff2'),
+        url('Futura-Bold.woff') format('woff'),
+        url('Futura-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('Futura-Medium.eot');
+    src: url('Futura-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Futura-Medium.woff2') format('woff2'),
+        url('Futura-Medium.woff') format('woff'),
+        url('Futura-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,1 @@
+function burgerToggle(){const e=document.querySelector("#burger");e.addEventListener("click",(function(){e.classList.toggle("open")}))}burgerToggle();

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  font-size: $font-size;
+  color: $clr-primary;
+  background-color: #f1f1f1;
+}
+
+.ax-container {
+  margin: 0 30px;
+
+  @include wide-screen-lg {
+    margin: 0 140px;
+  }
+}
+
+img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
