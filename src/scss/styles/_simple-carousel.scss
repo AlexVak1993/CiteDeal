@@ -1,0 +1,57 @@
+.simple-carousel {
+  padding-top: 50px;
+  padding-bottom: 130px;
+
+  .card-container {
+    .card-row {
+      margin-right: -45px;
+      margin-left: -45px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      .card {
+        padding: 0 45px;
+        border: none;
+        background-color: transparent;
+        z-index: 1;
+
+        &-img {
+          position: relative;
+
+          img {
+            border: 3px solid $clr-accent;
+            
+          }
+
+          &::after {
+            content: '';
+            background-color: $clr-accent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transform: matrix(-1, 0.09, -0.09, -1, 0, 0);
+          }
+        }
+      }
+
+      .card:nth-child(even) {
+        .card-img::after {
+          transform: matrix(1, 0.09, -0.09, 1, 0, 0);
+        }
+      }
+    }
+  }
+
+  .carousel {
+    .carousel-item {
+      max-height: 600px;
+
+      @include wide-screen-lg {
+        max-height: 800px;
+      }
+    }
+  }
+}

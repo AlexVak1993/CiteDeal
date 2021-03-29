@@ -31,8 +31,13 @@
     margin-bottom: 50px;
 
     .card {
+      margin-bottom: 50px;
       background-color: transparent;
       border: none;
+
+      @include tablet {
+        margin-bottom: 0;
+      }
 
       &-body {
         padding: 0;
@@ -67,4 +72,80 @@
       font-size: 3rem;
     }
   }
+}
+
+.hero-media {
+
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: $clr-light;
+  flex-direction: column;
+
+  @include desktop-sm {
+    flex-direction: row;
+  }
+  @include wide-screen-lg {
+    padding-top: 80px;
+    padding-bottom: 200px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-family: $font-submain;
+    font-weight: 700;
+
+    @include mobile-lg {
+      font-size: 1.75rem;
+    }
+    @include tablet {
+      font-size: 2.25rem;
+    }
+    @include desktop-sm {
+      margin-bottom: 20px;
+    }
+    @include wide-screen-sm {
+      font-size: 3rem;
+    }
+    @include wide-screen-lg {
+      font-size: 4rem;
+    }
+  }
+
+  &__caption {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+
+    @include mobile-lg {
+      font-size: 1.25rem;
+    }
+    @include tablet {
+      font-size: 1.5rem;
+    }
+    @include wide-screen-sm {
+      font-size: 2rem;
+    }
+    @include wide-screen-lg {
+      font-size: 2.5rem;
+      margin-bottom: 70px;
+    }
+
+    .price {
+      font-size: 1.2em;
+    }
+    .caption {
+      font-weight: 400;
+    }
+  }
+
+  .media-body {
+    margin-bottom: 30px;
+  }
+}
+
+.hero-bg-1 {
+  background-image: url(../images/2backgroung.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -5,6 +5,7 @@
   @include mobile-lg {
     margin: 0 30px;
   }
+
   @include wide-screen-lg {
     margin: 0 140px;
   }
@@ -19,10 +20,12 @@
     @include mobile-md {
       font-size: 1.5rem;
     }
+
     @include tablet {
       font-size: 2rem;
       margin-bottom: 30px;
     }
+
     @include wide-screen-lg {
       font-size: 3rem;
       margin-bottom: 60px;
@@ -35,16 +38,22 @@
     @include tablet {
       margin-bottom: 50px;
     }
+
     @include wide-screen-lg {
       margin-bottom: 150px;
     }
-    
+
     .media {
       padding: 10px 0;
       flex-direction: column;
 
       @include tablet {
+        padding: 20px 0;
         flex-direction: row;
+      }
+
+      @include wide-screen-lg {
+        padding: 50px 0;
       }
 
       &-body {
@@ -53,11 +62,30 @@
         @include desktop-sm {
           padding: 30px;
         }
+
         @include wide-screen-sm {
           padding: 50px 50px 50px 80px;
         }
+
         @include wide-screen-lg {
           padding: 75px 40px 40px 180px;
+        }
+      }
+
+      .number {
+        &-item {
+          margin-top: -2px;
+          margin-right: 20px;
+          max-width: 30px;
+          max-height: 30px;
+          float: left;
+
+          @include wide-screen-lg {
+            margin-right: 0;
+            margin-left: -80px;
+            max-width: 50px;
+            max-height: 50px;
+          }
         }
       }
 
@@ -68,11 +96,19 @@
         @include mobile-lg {
           font-size: 1.5rem;
         }
+
         @include desktop-md {
           font-size: 1.75rem;
         }
+
         @include wide-screen-lg {
           font-size: 2.5rem;
+        }
+      }
+
+      p {
+        @include wide-screen-lg {
+          font-size: 1.5rem;
         }
       }
 
@@ -85,10 +121,40 @@
       }
     }
 
-    &--bgr {
+    &--bgr-prim {
       .media:nth-of-type(odd) {
         background-color: #D6D5FF;
       }
+    }
+
+    &--bgr-sub {
+      .media:nth-of-type(odd) {
+        background-color: #fafafa;
+      }
+    }
+
+    &--bgr-inverse {
+      .media:nth-of-type(odd) {
+        background-color: #fff;
+      }
+    }
+
+    &--m-less {
+      @include wide-screen-lg {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &--height-p {
+    padding-top: 20px;
+
+    @include tablet {
+      padding-top: 30px;
+    }
+
+    @include wide-screen-lg {
+      padding-top: 70px;
     }
   }
 }

@@ -1,0 +1,160 @@
+@@include('./html-templates/_head.html',{
+"title":"CitaDeal"
+})
+
+@@include('./html-templates/_header.html',{
+  "active1":"active"
+})
+
+<main>
+
+  <div class="container-fluid hero ">
+    <div class="row">
+      <div class="col ax-container">
+        <h1 class="hero__title">Les produits des commerces alentours sont sur <strong>Citadeal</strong>.</h1>
+
+        <div class="container-fluid card-container">
+          <div class="row justify-content-center">
+
+            @@include('./html-templates/_cards.html',{
+            "title":"Achetez en boutique",
+            "route":"hero1"
+            })
+            @@include('./html-templates/_cards.html',{
+            "title":"Retirez en magasin",
+            "route":"hero2"
+            })
+            @@include('./html-templates/_cards.html',{
+            "title":"Faites vous livrer",
+            "route":"hero3"
+            })
+
+          </div>
+        </div>
+
+        <p class="hero__caption">Citadeal est votre partenaire Shopping. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col ax-container download">
+
+        <div class="media">
+          <div class="media-body">
+            <p class="download__title">Avec Citadeal, trouvez <strong>ce que vous cherchez</strong> en un coup d’oeil.
+              <strong>Tous les produits</strong> vendus autour de vous sur <strong>une seule application</strong>.
+            </p>
+            <p class="download__caption">Téléchargez l’application Citadeal sur&nbsp;:</p>
+
+            <div class="store-btn">
+              <a class="btn link" href="#">
+                <img src="images/icons/store1.svg" class="rounded" alt="app store">
+                <p>Téléchargez dans <br> <span>l’App Store</span></p>
+              </a>
+              <a class="btn link" href="#">
+                <img src="images/icons/store2.svg" class="rounded" alt="google play">
+                <p>Disponible dans <br> <span>Google Play</span></p>
+              </a>
+            </div>
+          </div>
+          <img class="download__screan" src="images/phoneScrean.png" class="" alt="phone screan">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col ax-container functionne">
+        <h2 class="functionne__title">Comment fonctionne CitaDeal&nbsp;?</h2>
+
+        <ul class="list-unstyled functionne__list functionne__list--bgr-prim">
+          
+          @@include('./html-templates/_media-list.html',{
+            "title":"Consultez la carte ou le catalogue",
+            "route":"sac shopping",
+            "desc":"Ecrivez ce que vous recherchez et CitaDeal vous trouve tous les articles correspondants dans les boutiques situées autour de vous. Et si vous ne trouvez pas votre bonheur ? Choisissez une position manuellement en un mouvement et explorez d'autres lieux comme si vous y étiez !",
+            "order":"order-1"
+            })
+          @@include('./html-templates/_media-list.html',{
+            "title":"Créez vos listes de shopping",
+            "route":"shopping list",
+            "desc":"Un anniversaire, des cadeaux de Noël, une liste de naissance ou de mariage, ou simplement des achats quotidiens ? Créez les listes que vous voulez et ajoutez-y les articles qui vous plaisent. CitaDeal vous guide jusqu'à chaque article ou vous les livre à domicile !",
+            "order":"order-1 order-md-0"
+            })
+          @@include('./html-templates/_media-list.html',{
+            "title":"Sauvegardez vos articles favoris",
+            "route":"heart boots",
+            "desc":"Vous hésitez sur un article ? Ajoutez-le aux favoris le temps de votre réflexion. Néanmoins, attention, les articles indisponibles ne sont plus visibles ! Hâtez-vous !",
+            "order":"order-1"
+            })
+          @@include('./html-templates/_media-list.html',{
+            "title":"Visualisez vos trajets sur la carte",
+            "route":"Map illustration",
+            "desc":"Un article vous intéresse dans un magasin et vous souhaitez vous y rendre ? Nous vous indiquons le chemin le plus court et le nombre de kilomètre à parcourir pour y arriver. Et cela fonctionne aussi pour plusieurs articles dans plusieurs magasins à la fois !",
+            "order":"order-1 order-md-0"
+            })
+          @@include('./html-templates/_media-list.html',{
+            "title":"Ajoutez vos magasins préférés en favoris",
+            "route":"heart magazine",
+            "desc":"Charmez par une boutique et les produits qu’elle vend ? Suivez toutes ses nouveautés et promotions en un rien de temps ? Mettez-la en favoris et restez attentif !",
+            "order":"order-1"
+            })
+
+          </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid palette">
+    <div class="row">
+      <div class="col ax-container">
+        <h3 class="palette__title">Fonctionnalités des icônes de la carte</h3>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-6 palette__row">
+
+          @@include('./html-templates/_palette.html',{
+            "title":"Affichez le trajet sur la carte",
+            "route":"goIcon"
+          })
+
+          @@include('./html-templates/_palette.html',{
+            "title":"Déterminez une nouvelle adresse",
+            "route":"earthIcon"
+          })
+
+          @@include('./html-templates/_palette.html',{
+            "title":"Géolocalisez votre position",
+            "route":"locationIcon"
+          })
+
+          @@include('./html-templates/_palette.html',{
+            "title":"Déplacez-vous sur la carte",
+            "route":"needleIcon"
+          })
+
+          @@include('./html-templates/_palette.html',{
+            "title":"Regardez vos retraits en attentes",
+            "route":"listIcon"
+          })
+
+          @@include('./html-templates/_palette.html',{
+            "title":"Recentrez-vous sur votre position GPS",
+            "route":"geoIcon"
+          })
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+@@include('./html-templates/_footer.html',{})
+
+@@include('./html-templates/_script.html',{})

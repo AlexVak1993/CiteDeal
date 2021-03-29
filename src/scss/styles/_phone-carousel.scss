@@ -1,0 +1,99 @@
+.phone-carousel {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  &__item {
+
+  @include wide-screen-lg {
+    margin-right: 120px;
+  }
+
+    .carousel-inner {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: $clr-accent;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      bottom: initial;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: initial;
+      height: initial;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  &__content {
+    .phone-carousel__title, .head {
+      margin-bottom: 20px;
+      font-family: $font-title;
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      @include desktop-sm {
+        font-size: 1.75rem;
+      }
+      @include wide-screen-sm {
+        font-size: 2rem;
+      }
+      @include wide-screen-lg {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+      }
+    }
+
+    p {
+      @include desktop-sm {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+      }
+      @include wide-screen-lg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    margin-top: 45px;
+
+    .arrow {
+      margin-left: -80px;
+      display: none;
+
+      @include desktop-md {
+        display: block;
+      }
+
+      @include wide-screen-lg {
+        margin-left: -120px;
+      }
+    }
+
+    .btns {
+      width: 100%;
+
+      .link {
+        p {
+          @include desktop-md {
+            font-size: 0.875rem;
+          }
+          @include wide-screen-sm {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
