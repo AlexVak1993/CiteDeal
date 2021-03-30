@@ -1,0 +1,170 @@
+@@include('./html-templates/_head.html',{
+"title":"CitaDeal"
+})
+
+@@include('./html-templates/_header.html',{
+"active3":"active"
+})
+
+<main>
+  <div class="container-fluid hero-bg-2">
+    <div class="row">
+      <div class="col ax-container">
+
+        <div class="media hero-media hero-media--wide-pad">
+          <div class="media-body col-12 col-lg-7 col-xl-6 align-self-lg-center">
+            <h1 class="mt-0 hero-media__title">Vous décidez où et quand vous livrez</h1>
+            <p class="mb-5">Des courses courtes et bien rémunérées. <br> Vous choisissez</p>
+            <div class="btn-container">
+              <a class="main-cta" href="#">C’est parti !</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5 col-xl-6 align-self-center">
+            <img src="images/3hero1.png" class="align-self-center mr-3" alt="...">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row intro ax-container">
+      <h2 class="col-12 intro__title">Pourquoi nous rejoindre&nbsp;?</h2>
+      
+      <div class="container-fluid card-container intro__cards">
+        <div class="row justify-content-center">
+
+          @@include('./html-templates/_cards-caption.html',{
+          "title":"Gagnez plus d’argent",
+          "route":"money",
+          "caption":"Rémunération généreuse à la course et par boutique. Nous sommes multi-boutiques, vous êtes payé à chaque fois que vous rentrez dans une boutique, en plus du paiement kilométrique."
+          })
+          @@include('./html-templates/_cards-caption.html',{
+          "title":"Ne perdez plus votre temps",
+          "route":"clock",
+          "caption":"Nos livraisons sont sur circuit court. Trouvez toutes les offres à proximité de votre position et à moins de 3km du client. La durée moyenne d’une livraison est de 20-30min."
+          })
+          @@include('./html-templates/_cards-caption.html',{
+          "title":"Vous êtes totalement libre",
+          "route":"bird",
+          "caption":"Votre inscription est sans engagement. Vous choisissez d’être en ligne ou hors ligne quand vous voulez. Travaillez le nombre d’heures que vous souhaitez selon vos objectifs de rémunération."
+          })
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container-fluid bgr-accent">
+    <div class="row ax-container">
+
+      <ul class="col list-unstyled functionne__list functionne__list--bgr-inverse functionne__list--m-less functionne__list--alone">
+        <li class="media">
+          <div class="col-md-5 order-1 order-md-0">
+            <img src="images/3func1.png" class="m-auto" alt="Ce dont vous avez besoin pour travailler avec nous">
+          </div>
+          <div class="col-md-7 media-body pb-md-0">
+            <h5 class="mt-0 media-title">Ce dont vous avez besoin pour travailler avec nous</h5>
+            <ul class="list-group accent-list accent-list--type2">
+              <li class="list-group-item">Être un professionnel (Gérant, salarié ou autoentrepreneur)</li>
+              <li class="list-group-item">Être âgé de 18 ans et plus</li>
+              <li class="list-group-item">Le véhicule de votre choix (vélo, scooter, voiture, camionnette…)</li>
+              <li class="list-group-item">Un permis de conduire pour les véhicules motorisés</li>
+              <li class="list-group-item">Une assurance de responsabilité civile professionnelle</li>
+              <li class="list-group-item">Des équipement de sécurité (ex: casque)</li>
+              <li class="list-group-item">Un smartphone avec iOS 12/Android 6.0 ou versions ultérieures</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row ax-container simple-caption">
+      <h2 class="simple-carousel__title">Ensemble, vous êtes plus fort</h2>
+      <p class="mx-auto">Téléchargez l’application et préparez tous les éléments nécessaires (carte d’identité ou passeport, coordonnées bancaires, justificatifs d'assurance...)</p>
+
+      <div class="store-btn mx-auto mt-4 store-btn--foot">
+        <a class="btn link" href="#">
+          <img src="images/icons/store1.svg" class="rounded" alt="app store">
+          <p>Téléchargez dans <br> <span>l’App Store</span></p>
+        </a>
+        <a class="btn link" href="#">
+          <img src="images/icons/store2.svg" class="rounded" alt="google play">
+          <p>Disponible sur <br> <span>Google Play</span></p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col ax-container functionne functionne--height-p">
+
+        <h2 class="functionne__title text-left">Comment ça marche?</h2>
+
+        <ul class="list-unstyled functionne__list functionne__list--bgr-sub functionne__list--m-less">
+          
+          @@include('./html-templates/_media-number-list.html',{
+            "title":"Inscrivez-vous",
+            "route":"login",
+            "desc":"Téléchargez l'application dédiée. Munissez-vous des documents administratifs requis. Et finalisez votre enregistrement en quelques minutes.",
+            "order":"order-1",
+            "path":"num1"
+            })
+          @@include('./html-templates/_media-number-list.html',{
+            "title":"Choisissez votre course",
+            "route":"phone-order",
+            "desc":"Si des courses sont disponibles prés de vous, vous allez les voir apparaître sur votre application. Choisissez la course de votre choix et acceptez la très simplement.",
+            "order":"order-1 order-md-0",
+            "path":"num2"
+            })
+          @@include('./html-templates/_media-number-list.html',{
+            "title":"Effectuez votre livraison",
+            "route":"courier",
+            "desc":"CitaDeal vous indique chaque magasin et les articles à récupérer dans chacun. Vous bénéficiez d'un trajet GPS proposé mais vous êtes libre de choisir votre itinéraire et l'ordre des retraits.",
+            "order":"order-1",
+            "path":"num3"
+            })
+          @@include('./html-templates/_media-number-list.html',{
+            "title":"Soyez rémunéré",
+            "route":"tirelir",
+            "desc":"Vous gagnez 1,50€ par magasin ainsi qu'un prix lié à la distance totale de la course. Cela vous garantie une rémunération avantageuse&nbsp;!",
+            "order":"order-1 order-md-0",
+            "path":"num4"
+            })
+
+          </ul>
+
+      </div>
+    </div>
+
+    <div class="btn-container justify-content-center">
+      <div class="store-btn mx-auto mt-4 store-btn--foot">
+        <a class="btn link" href="#">
+          <img src="images/icons/store1.svg" class="rounded" alt="app store">
+          <p>Téléchargez dans <br> <span>l’App Store</span></p>
+        </a>
+        <a class="btn link" href="#">
+          <img src="images/icons/store2.svg" class="rounded" alt="google play">
+          <p>Disponible sur <br> <span>Google Play</span></p>
+        </a>
+      </div>   
+     </div>
+  </div>
+
+</main>
+
+@@include('./html-templates/_footer.html',{
+"fb":"facebook",
+"in":"linkedin"
+})
+
+@@include('./html-templates/_script.html',{})

@@ -56,4 +56,42 @@
       }
     }
   }
+
+  &__cards {
+    .card {
+      border: none;
+      background-color: transparent;
+
+      &-title {
+        font-weight: 700;
+
+        @include wide-screen-lg {
+          font-size: 1.875rem;
+        }
+      }
+    }
+
+    .img-container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 220px;
+      overflow: hidden;
+
+      @include wide-screen-lg {
+        width: 250px;
+        height: 250px;
+      }
+      
+      img {
+        width: 70%;
+
+        @include wide-screen-lg {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

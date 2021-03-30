@@ -111,14 +111,6 @@
           font-size: 1.5rem;
         }
       }
-
-      img {
-        width: 50%;
-
-        @include tablet {
-          width: auto;
-        }
-      }
     }
 
     &--bgr-prim {
@@ -142,6 +134,24 @@
     &--m-less {
       @include wide-screen-lg {
         margin-bottom: 50px;
+      }
+    }
+
+    &--alone {
+      margin-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+
+      @include mobile-lg {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      @include tablet {
+        margin-top: 50px;
+      }
+      @include wide-screen-lg {
+        margin-top: 70px;
+        margin-bottom: 70px;
       }
     }
   }

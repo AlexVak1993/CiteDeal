@@ -33,6 +33,14 @@ a {
   }
 }
 
+p {
+  @include wide-screen-lg {
+    font-size: 1.5rem;
+  }
+}
+
 .bgr-accent {
   background: transparent linear-gradient(180deg, #D6D5FF 0%, #EBEBFF 100%) 0% 0% no-repeat padding-box;
 }
+.bgr-grad {
+  background: transparent linear-gradient(270deg, #5C50FA 0%, #A8A2F8 100%) 0% 0% no-repeat padding-box;}

@@ -141,10 +141,22 @@
   .media-body {
     margin-bottom: 30px;
   }
+
+  &--wide-pad {
+  @include wide-screen-lg {
+    padding-bottom: 80px;
+  }
+  }
 }
 
 .hero-bg-1 {
   background-image: url(../images/2backgroung.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-bg-2 {
+  background-image: url(../images/background3.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,8 +1,36 @@
 .simple-carousel {
   padding-top: 50px;
-  padding-bottom: 130px;
+  padding-bottom: 50px;
+
+  @include wide-screen-lg {
+    padding-bottom: 130px;
+  }
+
+  &__title {
+    font-family: $font-title;
+    font-weight: 700;
+
+    @include wide-screen-sm {
+      font-size: 2.25rem;
+    }
+    @include wide-screen-lg {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    @include wide-screen-lg {
+      font-size: 1.5rem;
+    }
+  }
 
   .card-container {
+    margin-bottom: 30px;
+
+    @include wide-screen-lg {
+      margin-bottom: 80px;
+    }
+
     .card-row {
       margin-right: -45px;
       margin-left: -45px;
@@ -10,10 +38,23 @@
       padding-bottom: 40px;
 
       .card {
-        padding: 0 45px;
+        margin-bottom: 40px;
         border: none;
         background-color: transparent;
         z-index: 1;
+
+        @include tablet {
+          padding: 0 45px;
+        }
+
+        &-title {
+          font-weight: 700;
+          text-align: center;
+
+          @include wide-screen-lg {
+            margin-bottom: 30px;
+          }
+        }
 
         &-img {
           position: relative;
@@ -45,12 +86,80 @@
     }
   }
 
+  .slider {
+    padding: 20px;
+    background-color: $clr-light;
+
+    @include tablet {
+      padding: 30px;
+    }
+    @include desktop-sm {
+      padding: 30px 45px;
+    }
+    @include wide-screen-lg {
+      padding: 70px 65px;
+    }
+
+    &-title {
+      font-family: $font-title;
+      font-weight: 700;
+  
+      @include wide-screen-lg {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
   .carousel {
+    padding-bottom: 40px;
+
+    @include desktop-sm {
+      padding-bottom: 50px;
+    }
+    @include wide-screen-lg {
+      padding-bottom: 60px;
+    }
+
     .carousel-item {
       max-height: 600px;
 
       @include wide-screen-lg {
         max-height: 800px;
+      }
+    }
+
+    .carousel-indicators {
+      li {
+        box-sizing: border-box;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border-bottom: none;
+        border-top: none;
+        background-color: $clr-accent;
+        opacity: 1;
+        transition: .5s;
+
+        &.active {
+          box-shadow: 0 0 3px $clr-accent;
+          background-color: $clr-light;
+        }
+
+        @include desktop-sm {
+          width: 8px;
+          height: 8px;
+          &.active {
+            box-shadow: 0 0 4px $clr-accent;
+          }
+        }
+        @include wide-screen-lg {
+          width: 13px;
+          height: 13px;
+          &.active {
+            box-shadow: 0 0 6px $clr-accent;
+          }
+        }
       }
     }
   }

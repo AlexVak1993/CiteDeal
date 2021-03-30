@@ -34,8 +34,18 @@
   &__navbar {
 
     .nav-item {
+      &:hover {
+        cursor: pointer;
+      }
       .nav-link {
         position: relative;
+
+        @include wide-screen-sm {
+          font-size: 1.25rem;
+        }
+        @include wide-screen-lg {
+          font-size: 1.5rem;
+        }
 
         &::before {
           content: '';

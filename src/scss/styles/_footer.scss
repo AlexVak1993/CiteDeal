@@ -8,40 +8,6 @@
     padding-bottom: 45px;
   }
 
-  &__top {
-
-    .store-btn {
-      flex: 0 0 100%;
-
-      @include tablet {
-        flex-direction: row;
-      }
-
-      @include wide-screen-sm {
-        flex: 0 0 40%;
-        flex-direction: row;
-      }
-
-      .link {
-        font-size: 1rem;
-        line-height: 1;
-        transition: .3s;
-
-        @include tablet {
-          width: 60% !important;
-
-          &:first-of-type {
-            margin-right: 20px;
-          }
-        }
-      }
-
-      span {
-        font-size: 1.125em !important;
-      }
-    }
-  }
-
   &__title {
     margin-bottom: 20px;
 
@@ -118,10 +84,16 @@
         &:last-of-type {
           margin: 0;
         }
+
         &:hover {
           filter: invert(30%);
         }
       }
     }
+  }
+
+  &--reverse {
+    background-color: $clr-light;
+    color: $clr-accent;
   }
 }

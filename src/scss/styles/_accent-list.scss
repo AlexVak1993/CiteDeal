@@ -1,0 +1,57 @@
+.accent-list {
+  .list-group-item {
+    position: relative;
+    padding-left: 40px;
+    display: list-item;
+    list-style: none;
+    border: none;
+    background-color: transparent;
+
+    @include wide-screen-lg {
+      font-size: 1.5rem;
+      padding-left: 60px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+
+    }
+  }
+
+  &--type1 {
+    .list-group-item {
+      &::before {
+        background: url(../images/icons/checkMark.svg) center no-repeat;
+        background-size: contain;
+        width: 10px;
+        height: 10px;
+        left: 20px;
+
+        @include wide-screen-lg {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  &--type2 {
+    .list-group-item {
+      &::before {
+        background: url(../images/icons/checkMark2.svg) center no-repeat;
+        background-size: contain;
+        left: 0;
+        width: 25px;
+        height: 25px;
+
+      @include wide-screen-lg {
+        width: 34px;
+        height: 34px;
+      }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.simple-caption {
+  padding: 20px;
+  text-align: center;
+
+  @include tablet {
+    padding: 30px;
+  }
+
+  @include desktop-sm {
+    padding: 40px;
+  }
+
+  @include wide-screen-lg {
+    padding: 100px;
+  }
+
+  .simple-carousel__title {
+    margin: 0 auto 20px;
+
+    @include wide-screen-lg {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.simple-price {
+  padding: 20px 0;
+  text-align: left;
+  color: $clr-light;
+
+  @include wide-screen-lg {
+    margin-right: 90px;
+    margin-left: 90px;
+    padding: 100px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    @include wide-screen-lg {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    &--bold {
+      p {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__title-main,
+  &__title-sub {
+    font-family: $font-title;
+    font-weight: 700;
+
+    @include wide-screen-lg {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title-main {
+    font-size: 1.875rem;
+
+    @include wide-screen-lg {
+      font-size: 2.5em;
+    }
+
+    span {
+      font-size: 1.2em;
+      font-family: $font-accent;
+    }
+  }
+  &__title-sub {
+    @include wide-screen-lg {
+      font-size: 2.25rem;
+    }
+  }
+
+  .list-group {
+    border: 2px solid $clr-light;
+
+    @include wide-screen-lg {
+      border: 3px solid $clr-light;
+    }
+
+    .list-group-item {
+      position: relative;
+      padding-left: 40px;
+      display: list-item;
+      list-style: none;
+      border: none;
+      background-color: transparent;
+
+      @include wide-screen-lg {
+        font-size: 1.5rem;
+        padding-left: 60px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: url(../images/icons/checkMark.svg) center no-repeat;
+        background-size: contain;
+
+        @include wide-screen-lg {
+
+        width: 25px;
+        height: 25px;
+        }
+      }
+    }
+  }
+}
