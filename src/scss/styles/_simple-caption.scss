@@ -10,16 +10,8 @@
     padding: 40px;
   }
 
-  @include wide-screen-lg {
-    padding: 100px;
-  }
-
   .simple-carousel__title {
     margin: 0 auto 20px;
-
-    @include wide-screen-lg {
-      margin-bottom: 35px;
-    }
   }
 }
 
@@ -28,23 +20,20 @@
   text-align: left;
   color: $clr-light;
 
-  @include wide-screen-lg {
-    margin-right: 90px;
-    margin-left: 90px;
-    padding: 100px;
+  @include tablet {
+    padding: 40px 0;
   }
 
   &__item {
-    margin-bottom: 20px;
-
-    @include wide-screen-lg {
-      padding-right: 50px;
-      padding-left: 50px;
-    }
 
     &--bold {
-      p {
-        font-weight: 700;
+      font-weight: 700;
+    }
+    &--mb {
+      margin-bottom: 20px;
+
+      @include tablet {
+        margin-bottom: 0;
       }
     }
   }
@@ -53,17 +42,13 @@
   &__title-sub {
     font-family: $font-title;
     font-weight: 700;
-
-    @include wide-screen-lg {
-      margin-bottom: 30px;
-    }
   }
 
   &__title-main {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
 
-    @include wide-screen-lg {
-      font-size: 2.5em;
+    @include tablet {
+      font-size: 1.875rem;
     }
 
     span {
@@ -71,18 +56,17 @@
       font-family: $font-accent;
     }
   }
+
   &__title-sub {
-    @include wide-screen-lg {
-      font-size: 2.25rem;
+    font-size: 1.25rem;
+
+    @include tablet {
+      font-size: 1.75rem;
     }
   }
 
   .list-group {
     border: 2px solid $clr-light;
-
-    @include wide-screen-lg {
-      border: 3px solid $clr-light;
-    }
 
     .list-group-item {
       position: relative;
@@ -91,10 +75,10 @@
       list-style: none;
       border: none;
       background-color: transparent;
+      font-size: 0.875rem;
 
-      @include wide-screen-lg {
-        font-size: 1.5rem;
-        padding-left: 60px;
+      @include mobile-lg {
+        font-size: 1rem;
       }
 
       &::before {
@@ -108,12 +92,6 @@
         height: 10px;
         background: url(../images/icons/checkMark.svg) center no-repeat;
         background-size: contain;
-
-        @include wide-screen-lg {
-
-        width: 25px;
-        height: 25px;
-        }
       }
     }
   }

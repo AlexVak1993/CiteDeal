@@ -1,0 +1,50 @@
+.propos {
+  background: transparent linear-gradient(180deg, #695EFC 0%, rgba(185, 185, 255, 0) 12%) 0% 0% no-repeat padding-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  &__head {
+    text-align: center;
+    color: $clr-light;
+  }
+
+  &__caption {
+    margin-bottom: 50px !important;
+  }
+
+  &__accent,
+  &__title {
+    font-family: $font-title;
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+
+    @include wide-screen-sm {
+      font-size: 2.75rem;
+    }
+  }
+
+  &__accent {
+    color: $clr-accent;
+    font-size: 1.375rem;
+
+    @include wide-screen-sm {
+      font-size: 2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+}

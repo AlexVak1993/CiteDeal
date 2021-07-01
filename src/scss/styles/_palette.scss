@@ -7,31 +7,21 @@
   @include tablet {
     margin-bottom: 50px;
   }
-  @include wide-screen-lg {
-    margin-bottom: 180px;
-  }
 
   &__title {
     text-align: center;
     font-family: $font-title;
     font-weight: 700;
     margin-bottom: 30px;
+    font-size: 1.25rem;
 
     @include desktop-sm {
       margin-bottom: 50px;
       font-size: 2rem;
     }
-    @include wide-screen-lg {
-      margin-bottom: 80px;
-      font-size: 3rem;
-    }
   }
 
   &__row {
-
-    @include wide-screen-lg {
-      margin: 0 60px;
-    }
 
     .card {
       background-color: transparent;
@@ -52,6 +42,11 @@
       }
       &-title {
         text-align: center;
+        font-size: 1rem;
+
+        @include mobile-lg {
+          font-size: 1.25rem;
+        }
       }
     }
   }

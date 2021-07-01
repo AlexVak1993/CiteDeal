@@ -1,14 +1,11 @@
 .intro {
   padding-top: 30px;
   padding-bottom: 30px;
+  justify-content: center;
 
   @include tablet {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  @include wide-screen-lg {
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
   
   &__title {
@@ -16,16 +13,17 @@
     margin-bottom: 20px;
     font-family: $font-title;
     font-weight: 700;
+    font-size: 1.25rem;
 
     @include mobile-lg {
       margin-bottom: 30px;
+      font-size: 1.5rem;
     }
     @include desktop-sm {
       margin-bottom: 50px;
     }
-    @include wide-screen-lg {
-      margin-bottom: 80px;
-      font-size: 3rem;
+    @include wide-screen-sm {
+      font-size: 2rem;
     }
   }
 
@@ -34,16 +32,13 @@
     @include tablet {
       text-align: center;
     }
-    @include wide-screen-lg {
-      padding-right: 30px;
-      padding-left: 30px;
-    }
    
     .content-title {
       font-weight: 700;
+      font-size: 1rem;
 
-      @include wide-screen-lg {
-        font-size: 1.875rem;
+      @include mobile-lg {
+        font-size: 1.25rem;
       }
     }
 
@@ -51,23 +46,29 @@
       @include desktop-sm {
         font-size: 1.125rem;
       }
-      @include wide-screen-lg {
-        font-size: 1.5rem;
-      }
     }
   }
 
   &__cards {
+    padding: 0;
+
+    @include mobile-lg {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     .card {
       border: none;
       background-color: transparent;
+      padding: 0;
+
+      @include mobile-lg {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       &-title {
         font-weight: 700;
-
-        @include wide-screen-lg {
-          font-size: 1.875rem;
-        }
       }
     }
 
@@ -79,18 +80,9 @@
       width: 220px;
       height: 220px;
       overflow: hidden;
-
-      @include wide-screen-lg {
-        width: 250px;
-        height: 250px;
-      }
       
       img {
         width: 70%;
-
-        @include wide-screen-lg {
-          width: 100%;
-        }
       }
     }
   }

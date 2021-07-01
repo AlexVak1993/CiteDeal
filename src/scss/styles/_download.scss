@@ -9,9 +9,6 @@
   @include tablet {
     margin-bottom: 50px;
   }
-  @include wide-screen-lg {
-    margin-bottom: 200px;
-  }
 
   .media {
     flex-direction: column;
@@ -43,13 +40,10 @@
     font-family: $font-submain;
     font-size: 1.25rem;
     text-align: center;
-
-    @include mobile-md {
-      font-size: 1.5rem;
-    }
+    margin-bottom: 30px;
 
     @include mobile-lg {
-      margin-bottom: 30px;
+      font-size: 1.5rem;
       text-align: left;
     }
 
@@ -60,25 +54,18 @@
     @include desktop-md {
       font-size: 2.5rem;
     }
-
-    @include wide-screen-lg {
-      margin-bottom: 80px;
-      font-size: 3.5rem;
-    }
   }
 
   &__caption {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
 
+    @include mobile-lg {
+      font-size: 1.25rem;
+    }
     @include desktop-md {
       margin-bottom: 30px;
       font-size: 1.75rem;
-    }
-
-    @include wide-screen-lg {
-      font-size: 2.25rem;
-      margin-bottom: 50px;
     }
   }
 }

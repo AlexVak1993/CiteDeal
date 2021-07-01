@@ -1,18 +1,22 @@
 .hero {
   padding: 50px 15px 50px;
   font-family: $font-submain;
-  background: transparent linear-gradient(180deg, #695EFC 0%, #B9B9FF00 100%) 0% 0% no-repeat padding-box;
+  background: linear-gradient(180deg, #695EFC 0%, rgba(185, 185, 255, 0) 100%) 0% 0% no-repeat;
 
-  @include wide-screen-sm {
-    padding: 50px 15px 130px;
+  @include wide-screen-md {
+    padding: 100px 15px 200px;
   }
 
   &__title {
     margin-bottom: 40px;
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: $clr-light;
+
+    @include mobile-lg {
+      font-size: 1.75rem;
+    }
 
     @include tablet {
       font-size: 2rem;
@@ -21,14 +25,14 @@
     @include wide-screen-sm {
       font-size: 2.5rem;
     }
-
-    @include wide-screen-lg {
-      font-size: 4rem;
-    }
   }
 
   .card-container {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include mobile-lg {
+      margin-bottom: 50px;
+    }
 
     .card {
       margin-bottom: 50px;
@@ -42,51 +46,50 @@
       &-body {
         padding: 0;
       }
-  
+
       &-title {
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-align: center;
         color: $clr-light;
 
+        @include mobile-lg {
+          font-size: 1.5rem;
+        }
         @include tablet {
           font-size: 2rem;
-        }
-
-        @include wide-screen-lg {
-          font-size: 3rem;
         }
       }
     }
   }
 
   &__caption {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
 
+    @include mobile-lg {
+      font-size: 1.5rem;
+    }
     @include tablet {
       font-size: 2rem;
-    }
-    @include wide-screen-lg {
-      font-size: 3rem;
     }
   }
 }
 
 .hero-media {
-
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 50px 0 20px;
   color: $clr-light;
   flex-direction: column;
 
   @include desktop-sm {
     flex-direction: row;
+    align-items: center;
+    padding-bottom: 100px;
   }
-  @include wide-screen-lg {
-    padding-top: 80px;
-    padding-bottom: 200px;
+
+  @include wide-screen-md {
+    padding: 220px 0 250px;
   }
 
   &__title {
@@ -97,67 +100,81 @@
     @include mobile-lg {
       font-size: 1.75rem;
     }
+
     @include tablet {
       font-size: 2.25rem;
     }
+
     @include desktop-sm {
       margin-bottom: 20px;
     }
+
     @include wide-screen-sm {
       font-size: 3rem;
     }
-    @include wide-screen-lg {
-      font-size: 4rem;
+
+    &--font-accent {
+      font-family: $font-title;
     }
   }
 
   &__caption {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.875rem;
+    font-weight: 400;
     margin-bottom: 40px;
 
     @include mobile-lg {
       font-size: 1.25rem;
     }
+
     @include tablet {
       font-size: 1.5rem;
     }
+
     @include wide-screen-sm {
       font-size: 2rem;
-    }
-    @include wide-screen-lg {
-      font-size: 2.5rem;
-      margin-bottom: 70px;
     }
 
     .price {
       font-size: 1.2em;
     }
+
     .caption {
       font-weight: 400;
+    }
+
+    &--font-accent {
+      font-family: $font-accent;
+      font-size: 1.25rem;
+      font-weight: 500;
+
+      @include tablet {
+        font-size: 2.125rem;
+      }
     }
   }
 
   .media-body {
     margin-bottom: 30px;
-  }
+    padding: 0;
 
-  &--wide-pad {
-  @include wide-screen-lg {
-    padding-bottom: 80px;
+    .main-cta {
+      font-weight: 400;
+    }
   }
-  }
+}
+
+.hero-bg-1,
+.hero-bg-2 {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-bg-1 {
   background-image: url(../images/2backgroung.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+
 .hero-bg-2 {
   background-image: url(../images/background3.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

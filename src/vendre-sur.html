@@ -8,9 +8,10 @@
 
   <main>
 
-    <div class="container-fluid hero-bg-1">
-      <div class="row">
-        <div class="col ax-container">
+    <!-- hero section -->
+    <div class="container-fluid hero-bg-1 max-container">
+      <div class="row ax-container">
+        <div class="col p-0">
 
           <div class="media hero-media">
             <div class="media-body col-12 col-lg-7 col-xl-6">
@@ -21,8 +22,8 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-5 col-xl-6 align-self-center">
-              <img src="images/2hero.png" class="align-self-center mr-3" alt="...">
+            <div class="col-12 col-lg-5 col-xl-6">
+              <img src="images/2hero.png" class="align-self-center mr-3" alt="femme avec téléphone">
             </div>
           </div>
           
@@ -30,27 +31,33 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <!-- intro container -->
+    <div class="container-fluid max-container">
       <div class="row intro ax-container">
         <h2 class="col-12 intro__title">Pourquoi nous rejoindre&nbsp;?</h2>
-        <div class="col-md-4 intro__content">
-          <h5 class="content-title">Visibilité locale garantie</h5>
-          <p>CitaDeal vous garantit de voir vos produits et votre magasin affichés à chaque fois qu'une recherche utilisateur vous concerne.</p>
-        </div>
-        <div class="col-md-4 intro__content">
-          <h5 class="content-title">Profitez de nos livreurs</h5>
-          <p>CitaDeal incite les clients à venir en boutique ou à retirer leurs achats en magasin. Mais nous livrons aussi vos clients à domicile.</p>
-        </div>
-        <div class="col-md-4 intro__content">
-          <h5 class="content-title">L'union fait la force</h5>
-          <p>CitaDeal soutient les commerçants en réunissant toutes les offres locales pour chaque utilisateur. La diversité des offres permet d'attirer plus d'utilisateurs.</p>
+        <div class="col-12 col-lg-10">
+          <div class="row">
+            <div class="col-md-4 intro__content">
+              <h5 class="content-title">Visibilité locale garantie</h5>
+              <p>CitaDeal vous garantit de voir vos produits et votre magasin affichés à chaque fois qu'une recherche utilisateur vous concerne.</p>
+            </div>
+            <div class="col-md-4 intro__content">
+              <h5 class="content-title">Profitez de nos livreurs</h5>
+              <p>CitaDeal incite les clients à venir en boutique ou à retirer leurs achats en magasin. Mais nous livrons aussi vos clients à domicile.</p>
+            </div>
+            <div class="col-md-4 intro__content">
+              <h5 class="content-title">L'union fait la force</h5>
+              <p>CitaDeal soutient les commerçants en réunissant toutes les offres locales pour chaque utilisateur. La diversité des offres permet d'attirer plus d'utilisateurs.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col ax-container functionne">
+    <!-- media brick -->
+    <div class="container-fluid max-container">
+      <div class="row ax-container">
+        <div class="col functionne">
   
           <ul class="list-unstyled functionne__list functionne__list--bgr-sub functionne__list--m-less">
             
@@ -58,19 +65,25 @@
               "title":"La livraison à domicile",
               "route":"2func1",
               "desc":"Nous vous mettons à disposition une flotte de livreurs pour transporter tous vos produits jusqu’à destination. Dés la réception d'une commande, nos livreurs passent récupérer les articles dans chaque boutique pour les déposer chez le client en quelques dizaines de minute&nbsp;!",
-              "order":"order-1"
+              "order":"order-1",
+              "pad":"media-img-container",
+              "alt":"livreur"
               })
             @@include('./html-templates/_media-list.html',{
               "title":"Retrait en magasin",
               "route":"2func2",
               "desc":"Vos clients peuvent acheter sur CitaDeal et venir retirer leurs articles chez-vous. Notre système vous informe des achats et des articles à mettre de côté. Vos clients sont proches, CitaDeal vous offre l'opportunité de les fidéliser.",
-              "order":"order-1 order-md-0"
+              "order":"order-1 order-md-0",
+              "pad":"media-img-container",
+              "alt":"Deux femmes"
               })
             @@include('./html-templates/_media-list.html',{
               "title":"Achat en magasin",
               "route":"2func3",
               "desc":"CitaDeal est un partenaire de Shopping. Vos clients peuvent trouver vos articles et venir directement les voir ou les essayer. CitaDeal digitalise votre visibilité et vous permet d'être découvert même dans des emplacements moins fréquentés.",
-              "order":"order-1"
+              "order":"order-1",
+              "pad":"media-img-container",
+              "alt":"Deux femmes"
               })
   
             </ul>
@@ -83,9 +96,10 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row bgr-accent">
-        <div class="col ax-container functionne functionne--height-p">
+    <!-- media brick -->
+    <div class="container-fluid bgr-accent max-container">
+      <div class="row ax-container">
+        <div class="col functionne functionne--height-p">
 
           <h2 class="functionne__title">Comment ça marche après l’inscription&nbsp;?</h2>
   
@@ -96,41 +110,46 @@
               "route":"monitor",
               "desc":"En quelques clics, créez vos produits et leurs variantes. Créez des accès à vos employés. Entrez vos horaires d'ouverture et mettez vos articles en ligne. Vous voilà désormais prêts à vendre&nbsp;!",
               "order":"order-1",
-              "path":"num1"
+              "path":"num1",
+              "alt":"moniteur"
               })
             @@include('./html-templates/_media-number-list.html',{
               "title":"Vendez",
               "route":"sac shopping",
               "desc":"Les clients qui découvrent vos produits sur l’application peuvent directement venir les voir dans votre boutique. Pour les achats en ligne, une interface dédiée aux commandes vous permet de voir les Retraits en Magasin en attente ainsi que les livreurs en approche&nbsp;!",
               "order":"order-1 order-md-0",
-              "path":"num2"
+              "path":"num2",
+              "alt":"trois sacs à provisions"
               })
             @@include('./html-templates/_media-number-list.html',{
               "title":"Remettez",
               "route":"delivery",
               "desc":"Les clients peuvent récupérer leurs achats en boutique ou bien se faire livrer grâce à notre service de livraison à domicile. Nos livreurs passent directement récupérer les commandes et les déposer chez les clients.",
               "order":"order-1",
-              "path":"num3"
+              "path":"num3",
+              "alt":"livreur"
               })
             @@include('./html-templates/_media-number-list.html',{
               "title":"Encaissez",
               "route":"tirelir",
               "desc":"CitaDeal vous rémunère pour chaque achat complété. Vos fonds sont transférés d'une semaine à l'autre. Qui plus est, vous êtes maitre de votre politique de retours et de remboursements&nbsp;!",
               "order":"order-1 order-md-0",
-              "path":"num4"
+              "path":"num4",
+              "alt":"tirelire"
               })
   
             </ul>
 
         </div>
       </div>
-
-      <div class="btn-container btn-container--mb btn-container--mt justify-content-center">
-        <a class="main-cta main-cta--inverse" href="#">Démarrez vos ventes</a>
-      </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="btn-container btn-container--mb btn-container--mt justify-content-center">
+      <a class="main-cta main-cta--inverse" href="#">Démarrez vos ventes</a>
+    </div>
+
+    <!-- phone carousel brick -->
+    <div class="container-fluid max-container">
       <div class="row ax-container d-block">
 
         <div class="media flex-wrap phone-carousel">
@@ -138,13 +157,13 @@
           <div id="carouselExampleControls" class="carousel slide col-12 col-md-5 phone-carousel__item order-1 order-md-0" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/phone.png" class="d-block w-100" alt="...">
+                <img src="images/phone.png" class="d-block w-100" alt="Téléphone">
               </div>
               <div class="carousel-item">
-                <img src="images/phone.png" class="d-block w-100" alt="...">
+                <img src="images/phone.png" class="d-block w-100" alt="Téléphone">
               </div>
               <div class="carousel-item">
-                <img src="images/phone.png" class="d-block w-100" alt="...">
+                <img src="images/phone.png" class="d-block w-100" alt="Téléphone">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -157,7 +176,7 @@
             </a>
           </div>
 
-          <div class="media-body col-12 col-md-7 phone-carousel__content">
+          <div class="media-body col-12 col-md-7 phone-carousel__content align-self-center">
             <h2 class="mt-0 phone-carousel__title">Votre visibilité est garantie&nbsp;!</h2>
             
             <p>Attirez les clients vers vos articles grâce à notre recherche géolocalisée.</p>
@@ -168,7 +187,7 @@
             <div class="phone-carousel__btn">
 
               <div class="arrow">
-                <img src="images/arrow.svg" class="rounded" alt="arrow">
+                <img src="images/arrow.svg" class="rounded" alt="...">
               </div>
 
               <div class="btns">
@@ -193,8 +212,8 @@
       </div>
     </div>
 
-
-    <div class="container-fluid bgr-accent">
+    <!-- desktop carousel brick -->
+    <div class="container-fluid bgr-accent max-container">
       <div class="row ax-container simple-carousel">
         <div class="col simple-carousel__intro">
           <h2 class="simple-carousel__title">Simplicité et rapidité</h2>
@@ -206,15 +225,18 @@
             
             @@include('./html-templates/_shape-cards.html',{
             "title":"Mise en ligne en un clic",
-            "route":"product-min"
+            "route":"product-min",
+            "alt":"écran de la liste de courses"
             })
             @@include('./html-templates/_shape-cards.html',{
             "title":"Suivi de commandes dynamique",
-            "route":"product-min"
+            "route":"product-min",
+            "alt":"écran de la liste de courses"
             })
             @@include('./html-templates/_shape-cards.html',{
             "title":"Gestion des employés",
-            "route":"product-min"
+            "route":"product-min",
+            "alt":"écran de la liste de courses"
             })
 
           </div>
@@ -240,16 +262,16 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="images/products.png" class="d-block w-100" alt="...">
+                    <img src="images/products.png" class="d-block w-100" alt="écran de la liste de courses">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/products.png" class="d-block w-100" alt="...">
+                    <img src="images/products.png" class="d-block w-100" alt="écran de la liste de courses">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/products.png" class="d-block w-100" alt="...">
+                    <img src="images/products.png" class="d-block w-100" alt="écran de la liste de courses">
                   </div>
                   <div class="carousel-item">
-                    <img src="images/products.png" class="d-block w-100" alt="...">
+                    <img src="images/products.png" class="d-block w-100" alt="écran de la liste de courses">
                   </div>
                 </div>
               </div>
@@ -263,17 +285,18 @@
     </div>
 
 
-    <div class="container-fluid">
+    <!-- simple-price brick -->
+    <div class="container-fluid max-container">
       <div class="row ax-container simple-caption">
         <h2 class="simple-carousel__title">Ensemble, vous êtes plus fort</h2>
         <p>On vous protège de la concurrence nationale, désormais vos concurrents restent ceux de vos quartiers et c’est tout. Alors plus vous êtes nombreux, plus nous aurons de client à vous apporter. On vous protège de la concurrence nationale, désormais vos concurrents restent ceux de vos quartiers et c’est tout.</p>
       </div>
     </div>
 
-    <div class="container-fluid bgr-grad">
+    <div class="container-fluid bgr-grad max-container">
       <div class="row ax-container simple-caption simple-price">
 
-        <div class="col-12 col-md-6  simple-price__item">
+        <div class="col-12 col-md-6 simple-price__item simple-price__item--mb">
           <h2 class="simple-price__title-main">Service complet pour <span>99,90&nbsp;€/mois.</span></h2>
 
           <ul class="list-group accent-list accent-list--type1">
@@ -299,9 +322,11 @@
 
 
 @@include('./html-templates/_footer.html',{
-  "castomize":"footer--reverse",
+  "castomize":"footer--inverse",
   "fb":"facebook-inv",
   "in":"linkedin-inv"
 })
+
+@@include('./html-templates/_cookies.html',{})
 
 @@include('./html-templates/_script.html',{})

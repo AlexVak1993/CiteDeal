@@ -3,22 +3,21 @@
   color: $clr-light;
   padding: 20px 0;
 
-  @include wide-screen-lg {
-    padding-top: 75px;
-    padding-bottom: 45px;
-  }
-
   &__title {
     margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
 
-    @include wide-screen-lg {
-      margin-bottom: 30px;
-      font-size: 2rem;
+    @include mobile-lg {
+      font-size: 1.25em;
+    }
+    @include wide-screen-sm {
+      font-size: 1.5rem;
     }
   }
 
   &__info {
-    padding: 20px 20px 20px 0;
+    padding: 20px 20px 20px 20px;
     flex: 0 0 100%;
     text-align: center;
 
@@ -32,17 +31,15 @@
 
     @include wide-screen-sm {
       flex: 0 0 30%;
-    }
-
-    p {
-      @include wide-screen-lg {
-        font-size: 1.25rem;
-      }
+      padding: 20px 20px 20px 0;
     }
   }
 
+  &__top {
+    padding-bottom: 20px;
+  }
+
   &__bottom {
-    padding-top: 20px;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -57,10 +54,6 @@
 
       @include mobile-lg {
         order: 0;
-      }
-
-      @include wide-screen-lg {
-        font-size: 1.25rem;
       }
     }
 
@@ -77,10 +70,6 @@
         margin-right: 20px;
         transition: filter .3s;
 
-        @include wide-screen-lg {
-          margin-right: 45px;
-        }
-
         &:last-of-type {
           margin: 0;
         }
@@ -92,7 +81,7 @@
     }
   }
 
-  &--reverse {
+  &--inverse {
     background-color: $clr-light;
     color: $clr-accent;
   }

@@ -2,14 +2,6 @@
   margin: 0;
   padding: 0;
 
-  @include mobile-lg {
-    margin: 0 30px;
-  }
-
-  @include wide-screen-lg {
-    margin: 0 140px;
-  }
-
   &__title {
     margin-bottom: 20px;
     font-family: $font-title;
@@ -17,18 +9,22 @@
     text-align: center;
     font-size: 1.25rem;
 
-    @include mobile-md {
-      font-size: 1.5rem;
-    }
-
     @include tablet {
       font-size: 2rem;
       margin-bottom: 30px;
     }
 
-    @include wide-screen-lg {
-      font-size: 3rem;
-      margin-bottom: 60px;
+    &--left-side {
+      text-align: left;
+      padding-left: 20px;
+
+      @include desktop-sm {
+        padding-left: 30px;
+      }
+
+      @include wide-screen-sm {
+        padding-left: 80px;
+      }
     }
   }
 
@@ -39,36 +35,41 @@
       margin-bottom: 50px;
     }
 
-    @include wide-screen-lg {
-      margin-bottom: 150px;
-    }
-
     .media {
       padding: 10px 0;
       flex-direction: column;
+      align-items: center;
 
       @include tablet {
         padding: 20px 0;
         flex-direction: row;
       }
 
-      @include wide-screen-lg {
-        padding: 50px 0;
+      &-img-container {
+        img {
+          @include mobile-lg {
+            padding: 0 30px;
+          }
+          @include tablet {
+            padding: 0;
+          }
+          @include desktop-md {
+            padding: 0 30px;
+          }
+        }
       }
 
       &-body {
         padding: 20px;
+        margin: auto;
+        flex: auto;
 
         @include desktop-sm {
           padding: 30px;
         }
 
         @include wide-screen-sm {
-          padding: 50px 50px 50px 80px;
-        }
-
-        @include wide-screen-lg {
-          padding: 75px 40px 40px 180px;
+          padding: 0 50px 0 80px;
         }
       }
 
@@ -80,11 +81,8 @@
           max-height: 30px;
           float: left;
 
-          @include wide-screen-lg {
-            margin-right: 0;
-            margin-left: -80px;
-            max-width: 50px;
-            max-height: 50px;
+          @include wide-screen-sm {
+            margin-left: -50px;
           }
         }
       }
@@ -92,6 +90,7 @@
       &-title {
         font-weight: 700;
         margin-bottom: 15px;
+        font-size: 1.125rem;
 
         @include mobile-lg {
           font-size: 1.5rem;
@@ -99,16 +98,6 @@
 
         @include desktop-md {
           font-size: 1.75rem;
-        }
-
-        @include wide-screen-lg {
-          font-size: 2.5rem;
-        }
-      }
-
-      p {
-        @include wide-screen-lg {
-          font-size: 1.5rem;
         }
       }
     }
@@ -131,27 +120,13 @@
       }
     }
 
-    &--m-less {
-      @include wide-screen-lg {
-        margin-bottom: 50px;
-      }
-    }
-
     &--alone {
       margin-top: 20px;
       padding-left: 0;
       padding-right: 0;
 
-      @include mobile-lg {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
       @include tablet {
         margin-top: 50px;
-      }
-      @include wide-screen-lg {
-        margin-top: 70px;
-        margin-bottom: 70px;
       }
     }
   }
@@ -161,10 +136,6 @@
 
     @include tablet {
       padding-top: 30px;
-    }
-
-    @include wide-screen-lg {
-      padding-top: 70px;
     }
   }
 }

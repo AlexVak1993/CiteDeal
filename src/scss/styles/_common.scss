@@ -11,10 +11,13 @@ body {
 }
 
 .ax-container {
-  margin: 0 30px;
+  margin: 0 auto;
+  width: 95%;
 
-  @include wide-screen-lg {
-    margin: 0 140px;
+  @include wide-screen-sm {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
   }
 }
 
@@ -25,6 +28,14 @@ img {
   height: auto;
 }
 
+p {
+  font-size: 0.875rem;
+
+  @include mobile-lg {
+    font-size: 1rem;
+  }
+}
+
 a {
   color: inherit;
 
@@ -33,14 +44,12 @@ a {
   }
 }
 
-p {
-  @include wide-screen-lg {
-    font-size: 1.5rem;
-  }
-}
-
 .bgr-accent {
   background: transparent linear-gradient(180deg, #D6D5FF 0%, #EBEBFF 100%) 0% 0% no-repeat padding-box;
 }
 .bgr-grad {
-  background: transparent linear-gradient(270deg, #5C50FA 0%, #A8A2F8 100%) 0% 0% no-repeat padding-box;}
+  background: transparent linear-gradient(270deg, #5C50FA 0%, #A8A2F8 100%) 0% 0% no-repeat padding-box;
+}
+.bgr-gray {
+  background-color: #fafafa;
+}

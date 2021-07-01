@@ -4,10 +4,6 @@
 
   &__item {
 
-  @include wide-screen-lg {
-    margin-right: 120px;
-  }
-
     .carousel-inner {
       width: 60%;
       margin: 0 auto;
@@ -38,7 +34,7 @@
     .phone-carousel__title, .head {
       margin-bottom: 20px;
       font-family: $font-title;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 700;
 
       @include desktop-sm {
@@ -47,19 +43,12 @@
       @include wide-screen-sm {
         font-size: 2rem;
       }
-      @include wide-screen-lg {
-        font-size: 2.5rem;
-        margin-bottom: 40px;
-      }
     }
 
     p {
       @include desktop-sm {
         font-size: 1.25rem;
         margin-bottom: 30px;
-      }
-      @include wide-screen-lg {
-        font-size: 1.5rem;
       }
     }
   }
@@ -74,10 +63,6 @@
 
       @include desktop-md {
         display: block;
-      }
-
-      @include wide-screen-lg {
-        margin-left: -120px;
       }
     }
 

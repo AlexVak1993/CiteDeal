@@ -2,40 +2,27 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @include wide-screen-lg {
-    padding-bottom: 130px;
-  }
-
   &__title {
-    font-family: $font-title;
     font-weight: 700;
+    font-size: 1.5rem;
 
     @include wide-screen-sm {
       font-size: 2.25rem;
-    }
-    @include wide-screen-lg {
-      font-size: 3rem;
-    }
-  }
-
-  p {
-    @include wide-screen-lg {
-      font-size: 1.5rem;
     }
   }
 
   .card-container {
     margin-bottom: 30px;
 
-    @include wide-screen-lg {
-      margin-bottom: 80px;
-    }
-
     .card-row {
-      margin-right: -45px;
-      margin-left: -45px;
       padding-top: 40px;
       padding-bottom: 40px;
+
+      @include tablet {
+
+      margin-right: -45px;
+      margin-left: -45px;
+      }
 
       .card {
         margin-bottom: 40px;
@@ -50,9 +37,10 @@
         &-title {
           font-weight: 700;
           text-align: center;
+          font-size: 1.125rem;
 
-          @include wide-screen-lg {
-            margin-bottom: 30px;
+          @include mobile-lg {
+            font-size: 1.25rem;
           }
         }
 
@@ -96,17 +84,14 @@
     @include desktop-sm {
       padding: 30px 45px;
     }
-    @include wide-screen-lg {
-      padding: 70px 65px;
-    }
 
     &-title {
       font-family: $font-title;
       font-weight: 700;
-  
-      @include wide-screen-lg {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
+      font-size: 1.25rem;
+
+      @include mobile-lg {
+        font-size: 1.75rem;
       }
     }
   }
@@ -117,16 +102,9 @@
     @include desktop-sm {
       padding-bottom: 50px;
     }
-    @include wide-screen-lg {
-      padding-bottom: 60px;
-    }
 
     .carousel-item {
       max-height: 600px;
-
-      @include wide-screen-lg {
-        max-height: 800px;
-      }
     }
 
     .carousel-indicators {
@@ -151,13 +129,6 @@
           height: 8px;
           &.active {
             box-shadow: 0 0 4px $clr-accent;
-          }
-        }
-        @include wide-screen-lg {
-          width: 13px;
-          height: 13px;
-          &.active {
-            box-shadow: 0 0 6px $clr-accent;
           }
         }
       }

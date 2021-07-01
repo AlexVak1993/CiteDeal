@@ -1,0 +1,71 @@
+.cookie-notif {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 20;
+
+  .toast {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    background-color: $clr-light;
+
+    &-body {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+
+      @include tablet {
+        padding: 40px;
+      }
+      @include desktop-sm {
+        flex-direction: row;
+      }
+    }
+    &.fade {
+      transition: .2s linear;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-family: $font-title;
+    font-size: 1.25rem;
+
+    @include mobile-lg {
+      font-size: 1.5rem;
+    }
+
+    @include wide-screen-lg {
+      font-size: 2.25rem;
+    }
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__close {
+    float: none;
+    opacity: 1;
+    min-width: auto;
+    font-size: 1rem;
+
+    @include tablet {
+      margin-right: 30px;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__accept {
+    border: none;
+  }
+
+  &__refuse {
+    box-shadow: none;
+    border: 2px solid $clr-accent !important;
+  }
+}
